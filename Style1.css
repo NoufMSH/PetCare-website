@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-image: linear-gradient(rgba(62, 66, 82, 0.7), rgba(62, 66, 82, 0.7)), url("welcome.jpg");
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+::selection{
+  background: #617470;
+  color: #f2f2f2;
+}
+.wrapper{
+  width: 380px;
+  background: #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #617470, #f2f2f2);
+}
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+
+.img{
+    width: 100%;
+    display: flex;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #617470;
+    margin-bottom: 14px;
+    
+  }
+
+
+
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .field textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+
+.wrapper form .field input:focus,.wrapper form .field textarea,
+form .field input:valid{
+  border-color: #617470;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #f2f2f2;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #617470;
+  background: #f2f2f2;
+  transform: translateY(-50%);
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#qq{
+  color: #617470;
+  margin-bottom: 20px;
+}
+#Manager , #Owner{
+  padding-left: 17px;
+  margin-top: 10px;
+}
+#OnOrMa{
+  padding-left: 1px;
+  margin-left: 3px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 11px;
+
+}
+#cont{
+padding-left: 20px;
+}
+
+form .content .radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+form .content input{
+  width: 15px;
+  height: 15px;
+  background: #617470;
+}
+
+form .content label{
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+form .content .pass-link{
+  color: "";
+}
+#content1 a{
+
+  text-decoration: none;
+}
+form .field input[type="submit"]{
+  color: #f2f2f2;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #617470, #f2f2f2);
+  transition: all 0.3s ease;
+}
+
+
+
+#loginbtn{
+  color: #f2f2f2;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #617470, #f2f2f2);
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 90%;
+  border-radius:15% ;
+  
+}
+
+.send-button {
+  display: inline-block;    
+  border: 1.5px solid #b4c9d3;
+  border-radius: 25px;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  margin-top: -12%;
+  margin-right: 50px;
+  margin-left: 120px;
+  margin-bottom: -2%;
+  padding: 12px 13px;
+  background-color: transparent;
+  margin-top: 10px;
+  height: 45px;
+  width: 150px;
+  color: #617470;
+  
+}
+
+
+.send-button:hover {
+  border: 1px solid #617470;
+  background: #61747057;
+  transition: 0.5s;
+}
+
+
+
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #617470;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+.logohome{
+  float:left;
+}
+
+#teVer{
+  color: #617470;
+  text-decoration: none;
+
+}
